@@ -1,23 +1,17 @@
 hiera_include('classes')
 
-package { 'icinga':
-  ensure  => present,
-  require => Apt::Source['formorer-icinga'],
-}
-->
-file { '/etc/icinga/htpasswd.users':
-  owner => 'www-data',
-  group => 'www-data',
-}
-->
 httpauth { 'icingaadmin':
   ensure    => present,
   mechanism => basic,
   realm     => '',
   password  => 'password',
   file      => '/etc/icinga/htpasswd.users',
+  require   => Package['icinga'],
 }
-->
-service { 'icinga':
-  ensure => running,
+
+file { '/etc/icinga/htpasswd.users':
+  ensure  => present,
+  owner   => 'www-data',
+  group   => 'www-data',
+  require => Httpauth['icingaadmin'],
 }

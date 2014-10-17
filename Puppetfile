@@ -5,6 +5,7 @@ forge "https://forgeapi.puppetlabs.com"
 
 mod 'puppetlabs-apt'
 mod 'jamtur01-httpauth', :git => 'https://github.com/jamtur01/puppet-httpauth.git'
+mod 'jbussdieker-icinga', :git => 'https://github.com/jbussdieker/puppet-icinga.git'
 
 # use dependencies defined in metadata.json
 #metadata

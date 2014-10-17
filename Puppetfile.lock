@@ -12,7 +12,15 @@ GIT
   specs:
     jamtur01-httpauth (0.0.2)
 
+GIT
+  remote: https://github.com/jbussdieker/puppet-icinga.git
+  ref: master
+  sha: 4fad4509c99bcd8b8ae2846554a48923fc32174a
+  specs:
+    jbussdieker-icinga (0.0.1)
+
 DEPENDENCIES
   jamtur01-httpauth (>= 0)
+  jbussdieker-icinga (>= 0)
   puppetlabs-apt (>= 0)
 
