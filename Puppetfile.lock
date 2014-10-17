@@ -5,6 +5,14 @@ FORGE
       puppetlabs-stdlib (>= 2.2.1)
     puppetlabs-stdlib (4.3.2)
 
+GIT
+  remote: https://github.com/jamtur01/puppet-httpauth.git
+  ref: master
+  sha: 8734601d7438b0e967370be142c1dae0617849ed
+  specs:
+    jamtur01-httpauth (0.0.2)
+
 DEPENDENCIES
+  jamtur01-httpauth (>= 0)
   puppetlabs-apt (>= 0)
 
