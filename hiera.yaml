@@ -4,4 +4,4 @@
 :yaml:
   :datadir: /vagrant/hieradata
 :hierarchy:
-  - icinga
+  - common

@@ -1,0 +1,4 @@
+classes:
+ - apt
+ - icinga
+icinga::check_external_commands: 1
